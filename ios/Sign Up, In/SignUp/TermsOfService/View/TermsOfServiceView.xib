@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TermsOfServiceViewController" customModule="Medium" customModuleProvider="target">
+            <connections>
+                <outlet property="dismissBtn" destination="8L4-gs-jFV" id="Hpq-fY-wiy"/>
+                <outlet property="view" destination="iN0-l3-epB" id="6aj-lv-O9Y"/>
+                <outlet property="webView" destination="g17-yf-Tlm" id="6Nt-F3-SOk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g17-yf-Tlm">
+                    <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6MS-z7-veh">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="medium.com" largeTitleDisplayMode="never" id="VJD-HV-M9E">
+                            <leftBarButtonItems>
+                                <barButtonItem title="Item" image="chevron.left" catalog="system" id="lfa-mL-wJu" userLabel="Back">
+                                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </barButtonItem>
+                                <barButtonItem image="chevron.right" catalog="system" id="e1J-qe-pac" userLabel="Forward">
+                                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </barButtonItem>
+                            </leftBarButtonItems>
+                            <rightBarButtonItems>
+                                <barButtonItem image="xmark" catalog="system" id="8L4-gs-jFV" userLabel="Dismiss">
+                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </barButtonItem>
+                                <barButtonItem systemItem="action" id="tWJ-J2-OZX">
+                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </barButtonItem>
+                            </rightBarButtonItems>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="g17-yf-Tlm" secondAttribute="bottom" id="D36-rF-Vc3"/>
+                <constraint firstItem="g17-yf-Tlm" firstAttribute="top" secondItem="6MS-z7-veh" secondAttribute="bottom" id="P6B-BL-Q1B"/>
+                <constraint firstItem="6MS-z7-veh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PFc-RQ-fUM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="6MS-z7-veh" secondAttribute="top" id="Yfu-fJ-zdG"/>
+                <constraint firstItem="g17-yf-Tlm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bWm-8a-gog"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6MS-z7-veh" secondAttribute="trailing" id="qgR-QI-uU6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="g17-yf-Tlm" secondAttribute="trailing" id="zOP-vU-tJi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="97"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="46" height="64"/>
+        <image name="chevron.right" catalog="system" width="46" height="64"/>
+        <image name="xmark" catalog="system" width="64" height="56"/>
+    </resources>
+</document>

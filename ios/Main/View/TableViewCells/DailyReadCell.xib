@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Daily Read Cell" rowHeight="100" id="KGk-i7-Jjw" customClass="DailyReadCell" customModule="Medium" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63c-D5-2ip" userLabel="Contents View">
+                        <rect key="frame" x="20" y="13.5" width="190" height="73.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 Things I Wish I Knew When I Started Programming" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nes-L2-xDb" userLabel="Title Label">
+                                <rect key="frame" x="0.0" y="0.0" width="190" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Pkf-be-z8Z">
+                                <rect key="frame" x="0.0" y="59" width="129.5" height="14.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Jun Wu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb2-Dt-JXb" userLabel="Author Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="45.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-He-JD0">
+                                        <rect key="frame" x="50.5" y="0.0" width="4" height="14.5"/>
+                                        <string key="text">·
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 min read" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAU-n1-89Z" userLabel="Time to Read Label">
+                                        <rect key="frame" x="59.5" y="0.0" width="70" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="nes-L2-xDb" firstAttribute="top" secondItem="63c-D5-2ip" secondAttribute="top" id="7Hy-5v-RNM"/>
+                            <constraint firstItem="Pkf-be-z8Z" firstAttribute="top" secondItem="nes-L2-xDb" secondAttribute="bottom" constant="5" id="BNr-2Y-E0u"/>
+                            <constraint firstAttribute="bottom" secondItem="Pkf-be-z8Z" secondAttribute="bottom" id="MhR-7J-nuG"/>
+                            <constraint firstItem="Pkf-be-z8Z" firstAttribute="leading" secondItem="63c-D5-2ip" secondAttribute="leading" id="RKD-tS-bzT"/>
+                            <constraint firstItem="nes-L2-xDb" firstAttribute="leading" secondItem="63c-D5-2ip" secondAttribute="leading" id="bGf-9l-nKc"/>
+                            <constraint firstAttribute="trailing" secondItem="nes-L2-xDb" secondAttribute="trailing" id="eeA-hd-UXP"/>
+                            <constraint firstAttribute="bottom" secondItem="nes-L2-xDb" secondAttribute="bottom" constant="19.5" id="trj-Ba-3eO"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Pkf-be-z8Z" secondAttribute="trailing" id="za4-rK-m1i"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sh2-WX-HYB" userLabel="Story Image">
+                        <rect key="frame" x="230" y="15" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Sh2-WX-HYB" secondAttribute="height" multiplier="1:1" id="ScJ-0R-FF5"/>
+                            <constraint firstAttribute="height" constant="70" id="gn2-zg-ffE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZL6-Gu-28I" userLabel="Publication View">
+                        <rect key="frame" x="225" y="69" width="21" height="21"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iyf-5h-DtT" userLabel="Publication Image">
+                                <rect key="frame" x="0.0" y="2" width="19" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iyf-5h-DtT" secondAttribute="height" multiplier="1:1" id="VZz-t2-2EF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ZL6-Gu-28I" secondAttribute="height" multiplier="1:1" id="1ta-CE-tV7"/>
+                            <constraint firstItem="iyf-5h-DtT" firstAttribute="height" secondItem="ZL6-Gu-28I" secondAttribute="height" multiplier="0.9" id="6KU-Ow-Pkc"/>
+                            <constraint firstItem="iyf-5h-DtT" firstAttribute="leading" secondItem="ZL6-Gu-28I" secondAttribute="leading" id="70n-uy-k0y"/>
+                            <constraint firstAttribute="bottom" secondItem="iyf-5h-DtT" secondAttribute="bottom" id="VOb-cD-v69"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="63c-D5-2ip" secondAttribute="trailing" constant="110" id="IEp-PI-dZE"/>
+                    <constraint firstItem="ZL6-Gu-28I" firstAttribute="height" secondItem="Sh2-WX-HYB" secondAttribute="height" multiplier="0.3" id="Nzg-1Y-Vt6"/>
+                    <constraint firstAttribute="trailing" secondItem="Sh2-WX-HYB" secondAttribute="trailing" constant="20" id="QZs-qW-vNZ"/>
+                    <constraint firstItem="Sh2-WX-HYB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VzO-q7-c3O"/>
+                    <constraint firstItem="63c-D5-2ip" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="g8D-RO-FrK"/>
+                    <constraint firstItem="ZL6-Gu-28I" firstAttribute="bottom" secondItem="Sh2-WX-HYB" secondAttribute="bottom" constant="5" id="pQ5-XN-qnf"/>
+                    <constraint firstItem="63c-D5-2ip" firstAttribute="height" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.8" id="qSE-9z-wNm"/>
+                    <constraint firstItem="63c-D5-2ip" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="xzZ-7t-K1h"/>
+                    <constraint firstItem="ZL6-Gu-28I" firstAttribute="leading" secondItem="Sh2-WX-HYB" secondAttribute="leading" constant="-5" id="znh-IC-4om"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorLab" destination="gb2-Dt-JXb" id="FKf-PP-7mA"/>
+                <outlet property="contentsView" destination="63c-D5-2ip" id="Fxb-oN-6VK"/>
+                <outlet property="publicationImgView" destination="iyf-5h-DtT" id="dNB-Qc-IRw"/>
+                <outlet property="publicationView" destination="ZL6-Gu-28I" id="YbT-iA-sbG"/>
+                <outlet property="storyImgView" destination="Sh2-WX-HYB" id="9c2-6Z-skM"/>
+                <outlet property="timeToReadLab" destination="sAU-n1-89Z" id="wcf-hz-WZa"/>
+                <outlet property="titleLab" destination="nes-L2-xDb" id="3CY-OI-EgT"/>
+                <outlet property="trailingConstraint" destination="IEp-PI-dZE" id="H2C-Wh-A2N"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="141.29464285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
