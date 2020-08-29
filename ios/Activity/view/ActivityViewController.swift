@@ -12,7 +12,7 @@ class ActivityViewController: BaseViewController {
     
     override func viewDidLoad() {
         view.backgroundColor = .backgroundColor
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationItem.title = "Activity"
+        // navigationItem.title = "Activity"
+	self.navigationItem.title = "Hello, World!"
     }
 }
